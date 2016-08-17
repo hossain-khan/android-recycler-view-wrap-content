@@ -1,0 +1,73 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="30dp"
+            android:text="Some Random Text View"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#dcaadc"/>
+
+        <Button
+            android:id="@+id/my_account_log_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sample Button"/>
+
+        <!-- =========== RANDOM VIEWS ADDED ABOVE RecyclerView ================== -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- DEV NOTE: Outer wrapper relative layout is added intentionally to address issue
+                 that only happens on Marshmallow & Nougat devices (API 23 & 24).
+
+                 On marshmallow API 23, the "RecyclerView" `layout_height="wrap_content"` does NOT
+                 occupy the height of all the elements added to it via adapter. The result is cut out
+                 items that is outside of device viewport when it loads initially.
+
+                 Wrapping "RecyclerView" with "RelativeLayout" fixes the issue on Marshmallow devices.
+            -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/row_list_item">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+        <!-- =========== RANDOM VIEWS ADDED BELOW RecyclerView ================== -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#dcdcdc"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sample Button"/>
+
+    </LinearLayout>
+
+</ScrollView>
