@@ -13,7 +13,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:padding="30dp"
             android:text="Some Random Text View"/>
 
