@@ -3,6 +3,7 @@ package info.hossainkhan.recyclerviewdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -26,6 +27,8 @@ public class RecyclerViewWrapContentIssueDemoFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Without Fix");
 
         // Partial code from https://developer.android.com/training/material/lists-cards.html#RecyclerView
 
