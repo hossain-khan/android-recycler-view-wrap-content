@@ -40,3 +40,5 @@ A picture is worth a thousand words, and a video is probably worth even more `^_
 
 # TODO
 File bug report with android project.
+
+_UPDATE: Reported new issue at https://code.google.com/p/android/issues/detail?id=220204_
