@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity
             //You can then add a fragment using the add() method, specifying the fragment to add and the view in which to insert it. For example:
             RecyclerViewWrapContentIssueDemoFragment fragment = new RecyclerViewWrapContentIssueDemoFragment();
 
-            fragmentTransaction.replace(R.id.content_main, fragment);
+            fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
         } else if (id == R.id.demo_with_fix) {
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity
             //You can then add a fragment using the add() method, specifying the fragment to add and the view in which to insert it. For example:
             RecyclerViewWrapContentFixDemoFragment fragment = new RecyclerViewWrapContentFixDemoFragment();
 
-            fragmentTransaction.replace(R.id.content_main, fragment);
+            fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_share) {
