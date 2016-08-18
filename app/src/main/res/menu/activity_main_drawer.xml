@@ -10,6 +10,10 @@
             android:id="@+id/demo_with_fix"
             android:icon="@drawable/ic_list_items"
             android:title="With Wrapper Fix"/>
+        <item
+            android:id="@+id/demo_with_nested_scrollview_fix"
+            android:icon="@drawable/ic_list_normal_items"
+            android:title="With NestedScrollView Fix"/>
     </group>
 
     <item android:title="Communicate">

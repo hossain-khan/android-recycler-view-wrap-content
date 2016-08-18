@@ -111,7 +111,14 @@ public class MainActivity extends AppCompatActivity
 
             fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
+        } else if (id == R.id.demo_with_nested_scrollview_fix) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            //You can then add a fragment using the add() method, specifying the fragment to add and the view in which to insert it. For example:
+            RecyclerViewNestedScrollviewFixDemoFragment fragment = new RecyclerViewNestedScrollviewFixDemoFragment();
 
+            fragmentTransaction.replace(R.id.content_fragment, fragment);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_share) {
             // https://developer.android.com/training/sharing/send.html
             Intent sendIntent = new Intent();
