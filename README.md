@@ -2,7 +2,7 @@
 This is a sample android app which demonstrates `RecyclerView` with **layout_height=wrap_content** not taking height of all the items issue inside `ScrollView` that happens on Marshmallow and Nougat (API 23 &amp; 24) and how to work around it.
 
  * UPDATE # 1: The issue seems to happen **only on** `PORTRAIT` orientation. On `LANDSCAPE` orientation the issue is not visible on Marshmallow+ devices.
- * UPDATE # 2: Bases on solution found on [stackoverflow](http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working), replacing root `ScrollView` with `android.support.v4.widget.NestedScrollView` also avoids this issue on Marshmallow+ devices. A new demo section has been added to showcase this.
+ * UPDATE # 2: Based on solution found on [stackoverflow](http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working), replacing root `ScrollView` with `android.support.v4.widget.NestedScrollView` also avoids this issue on Marshmallow+ devices. A new demo section has been added to showcase this.
 
 > `android.support.v7.widget.RecyclerView` version used **[24.1.1](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L27)** _(July 2016)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
