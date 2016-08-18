@@ -43,3 +43,6 @@ A picture is worth a thousand words, and a video is probably worth even more `^_
 File bug report with android project.
 
 _UPDATE: Reported new issue at https://code.google.com/p/android/issues/detail?id=220204_
+
+# Test On Device
+For convenience, I've uploaded my debug build `apk` to Google Drive. You can try installing the app from https://goo.gl/TDhWtY
