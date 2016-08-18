@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class RecyclerViewWrapContentFixDemoFragment extends Fragment {
+public class RecyclerViewNestedScrollviewFixDemoFragment extends Fragment {
 
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLayoutManager;
@@ -19,7 +19,7 @@ public class RecyclerViewWrapContentFixDemoFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recycler_view_with_fix, container, false);
+        View view = inflater.inflate(R.layout.fragment_recycler_view_with_nested_scrollview_fix, container, false);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
         return view;
     }
@@ -28,7 +28,7 @@ public class RecyclerViewWrapContentFixDemoFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("RelativeLayout Wrapper Fix");
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Nested ScrollView Fix");
 
         // Partial code from https://developer.android.com/training/material/lists-cards.html#RecyclerView
 
