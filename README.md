@@ -14,8 +14,9 @@ If you are interested in learning best practices for developing android apps, pl
 
 There is nothing to see in the code. Take a look at following layout files for workaround.
 
- * Layout **without** woraround - https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/src/main/res/layout/fragment_recycler_view_without_fix.xml#L33
- * Layout **with** workaround applied - https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/src/main/res/layout/fragment_recycler_view_with_fix.xml#L34
+ * Layout **without** any workaround - https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/src/main/res/layout/fragment_recycler_view_without_fix.xml#L33
+ * Layout **with** `RelativeLayout` wrapper workaround applied - https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/src/main/res/layout/fragment_recycler_view_with_fix.xml#L34
+ * Layout **with** `NestedScrollView` fix applied - https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/src/main/res/layout/fragment_recycler_view_with_nested_scrollview_fix.xml#L4
 
 Here is basic skeleton of layout I have used
 ```
