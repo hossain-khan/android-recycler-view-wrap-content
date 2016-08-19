@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/amardeshbd/android-recycler-view-wrap-content.svg)](https://travis-ci.org/amardeshbd/android-recycler-view-wrap-content)  [![AOSP issue link](https://img.shields.io/badge/AOSP%20issue-%23220204-orange.svg)](https://code.google.com/p/android/issues/detail?id=220204)
+
 # android-recycler-view-wrap-content
 This is a sample android app which demonstrates `RecyclerView` with **layout_height=wrap_content** not taking height of all the items issue inside `ScrollView` that happens on Marshmallow and Nougat (API 23 &amp; 24) and how to work around it.
 
