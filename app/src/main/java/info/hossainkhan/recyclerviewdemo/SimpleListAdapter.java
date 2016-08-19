@@ -1,5 +1,7 @@
 package info.hossainkhan.recyclerviewdemo;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,6 +51,11 @@ public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.Vi
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         holder.mTextView.setText(mDataset[position]);
+        if (position % 5 == 0) {
+            // just add some visual variation after some items
+            holder.mTextView.setTypeface(null, Typeface.BOLD);
+            holder.mTextView.setTextColor(Color.BLUE);
+        }
 
     }
 
