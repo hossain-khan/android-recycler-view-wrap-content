@@ -3,6 +3,7 @@ package info.hossainkhan.recyclerviewdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -28,7 +29,10 @@ public class RecyclerViewWrapContentIssueDemoFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Without Fix");
+        ActionBar supportActionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (supportActionBar != null) {
+            supportActionBar.setTitle(R.string.title_no_fix_applied);
+        }
 
         // Partial code from https://developer.android.com/training/material/lists-cards.html#RecyclerView
 
