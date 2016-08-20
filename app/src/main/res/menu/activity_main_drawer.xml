@@ -5,15 +5,15 @@
         <item
             android:id="@+id/demo_without_fix"
             android:icon="@drawable/ic_list_items"
-            android:title="Without Fix"/>
+            android:title="@string/title_no_fix_applied"/>
         <item
             android:id="@+id/demo_with_fix"
             android:icon="@drawable/ic_list_items"
-            android:title="With Wrapper Fix"/>
+            android:title="@string/title_with_relative_layout_wrapper_fix"/>
         <item
             android:id="@+id/demo_with_nested_scrollview_fix"
             android:icon="@drawable/ic_list_normal_items"
-            android:title="With NestedScrollView Fix"/>
+            android:title="@string/title_with_nestedscrollview_fix"/>
     </group>
 
     <item android:title="Communicate">
