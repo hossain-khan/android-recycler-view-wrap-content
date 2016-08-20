@@ -45,6 +45,7 @@ public class RecyclerViewWrapContentIssueDemoFragment extends Fragment {
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
+        // Disabled nested scrolling since Parent scrollview will scroll the content.
         mRecyclerView.setNestedScrollingEnabled(false);
 
         // specify an adapter (see also next example)

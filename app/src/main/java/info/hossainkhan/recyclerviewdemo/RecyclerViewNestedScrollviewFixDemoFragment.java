@@ -3,6 +3,7 @@ package info.hossainkhan.recyclerviewdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -28,7 +29,10 @@ public class RecyclerViewNestedScrollviewFixDemoFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Nested ScrollView Fix");
+        ActionBar supportActionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (supportActionBar != null) {
+            supportActionBar.setTitle(R.string.title_with_nestedscrollview_fix);
+        }
 
         // Partial code from https://developer.android.com/training/material/lists-cards.html#RecyclerView
 
@@ -41,6 +45,7 @@ public class RecyclerViewNestedScrollviewFixDemoFragment extends Fragment {
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
+        // Disabled nested scrolling since Parent scrollview will scroll the content.
         mRecyclerView.setNestedScrollingEnabled(false);
 
         // specify an adapter (see also next example)
