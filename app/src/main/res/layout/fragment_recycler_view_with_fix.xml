@@ -33,7 +33,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
             <!-- DEV NOTE: Outer wrapper relative layout is added intentionally to address issue
                  that only happens on Marshmallow & Nougat devices (API 23 & 24).
 
