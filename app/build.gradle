@@ -19,17 +19,21 @@ android {
     }
 }
 
+ext {
+    supportLibraryVersion = "24.2.1"
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.android.support:support-compat:24.2.0'
-    compile 'com.android.support:support-core-utils:24.2.0'
-    compile 'com.android.support:support-core-ui:24.2.0'
-    compile 'com.android.support:support-media-compat:24.2.0'
-    compile 'com.android.support:support-fragment:24.2.0'
-    compile 'com.android.support:design:24.2.0'
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support:support-compat:$supportLibraryVersion"
+    compile "com.android.support:support-core-utils:$supportLibraryVersion"
+    compile "com.android.support:support-core-ui:$supportLibraryVersion"
+    compile "com.android.support:support-media-compat:$supportLibraryVersion"
+    compile "com.android.support:support-fragment:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
     testCompile 'junit:junit:4.12'
 }
