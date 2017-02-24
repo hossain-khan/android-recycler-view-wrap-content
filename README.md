@@ -9,8 +9,9 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 4: Updated **Support Library** version from `24.2.0` to `24.2.1`, but the issue still exists.
  * UPDATE # 5: Updated **Support Library** version from `24.2.0` to `25.0.0`, but the issue still exists.
  * UPDATE # 6: Updated **Support Library** version from `25.0.0` to `25.1.0`, but the issue still exists.
+ * UPDATE # 7: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
 
-> `android.support.v7.widget.RecyclerView` version used **[25.1.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L23)** _(December 2016)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[25.2.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L24)** _(February 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
