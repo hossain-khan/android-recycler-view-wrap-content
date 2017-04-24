@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+// https://developer.android.com/topic/libraries/support-library/revisions.html
+def SUPPORT_LIB_VERSION = "25.3.1"
+
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
@@ -10,6 +13,8 @@ android {
         versionCode 2
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resValue "string", "support_lib_version", SUPPORT_LIB_VERSION
     }
     buildTypes {
         release {
@@ -21,7 +26,7 @@ android {
 
 ext {
     // https://developer.android.com/topic/libraries/support-library/revisions.html
-    supportLibraryVersion = "25.2.0"
+    supportLibraryVersion = SUPPORT_LIB_VERSION
 }
 
 dependencies {

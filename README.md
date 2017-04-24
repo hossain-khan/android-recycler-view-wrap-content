@@ -10,8 +10,9 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 5: Updated **Support Library** version from `24.2.0` to `25.0.0`, but the issue still exists.
  * UPDATE # 6: Updated **Support Library** version from `25.0.0` to `25.1.0`, but the issue still exists.
  * UPDATE # 7: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
+ * UPDATE # 8: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
 
-> `android.support.v7.widget.RecyclerView` version used **[25.2.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L24)** _(February 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[25.3.1](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(March 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
@@ -60,7 +61,7 @@ A picture is worth a thousand words, and a video is probably worth even more `^_
 
 ## Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/amardeshbd/android-recycler-view-wrap-content/master/web-resources/app-drawer-options-screenshot.png)
+![screenshot](https://cloud.githubusercontent.com/assets/99822/25346354/5f7f6f4c-28e5-11e7-88a7-1034ae2a1e31.png)
 
 # TODO
 ~~File bug report with android project.~~

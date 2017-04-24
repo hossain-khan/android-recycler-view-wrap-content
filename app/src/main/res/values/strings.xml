@@ -9,4 +9,5 @@
     <string name="title_no_fix_applied">Without Fix</string>
     <string name="title_with_relative_layout_wrapper_fix">With Wrapper Fix</string>
     <string name="title_with_nestedscrollview_fix">With NestedScrollView Fix</string>
+    <string name="selected_demo_type">Selected \'%s\' demo.</string>
 </resources>
