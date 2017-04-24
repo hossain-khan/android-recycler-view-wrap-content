@@ -61,7 +61,7 @@ A picture is worth a thousand words, and a video is probably worth even more `^_
 
 ## Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/amardeshbd/android-recycler-view-wrap-content/master/web-resources/app-drawer-options-screenshot.png)
+![screenshot](https://cloud.githubusercontent.com/assets/99822/25346354/5f7f6f4c-28e5-11e7-88a7-1034ae2a1e31.png)
 
 # TODO
 ~~File bug report with android project.~~
