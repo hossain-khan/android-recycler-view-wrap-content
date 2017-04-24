@@ -28,5 +28,14 @@
                 android:title="View"/>
         </menu>
     </item>
+    <item android:title="Support Library Version">
+        <menu>
+            <item
+                android:id="@+id/nav_support_lib_version"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="@string/support_lib_version"
+                android:enabled="true"/>
+        </menu>
+    </item>
 
 </menu>

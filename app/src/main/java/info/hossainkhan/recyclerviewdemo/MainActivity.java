@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity
 
             fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
+
+            Toast.makeText(this, String.format(getString(R.string.selected_demo_type), getString(R.string.title_no_fix_applied)), Toast.LENGTH_SHORT).show();
         } else if (id == R.id.demo_with_fix) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -102,6 +104,8 @@ public class MainActivity extends AppCompatActivity
 
             fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
+
+            Toast.makeText(this, String.format(getString(R.string.selected_demo_type), getString(R.string.title_with_relative_layout_wrapper_fix)), Toast.LENGTH_SHORT).show();
         } else if (id == R.id.demo_with_nested_scrollview_fix) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -110,6 +114,8 @@ public class MainActivity extends AppCompatActivity
 
             fragmentTransaction.replace(R.id.content_fragment, fragment);
             fragmentTransaction.commit();
+
+            Toast.makeText(this, String.format(getString(R.string.selected_demo_type), getString(R.string.title_with_nestedscrollview_fix)), Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_share) {
             // https://developer.android.com/training/sharing/send.html
             Intent sendIntent = new Intent();
