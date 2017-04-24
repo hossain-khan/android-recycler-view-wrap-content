@@ -21,7 +21,7 @@ android {
 
 ext {
     // https://developer.android.com/topic/libraries/support-library/revisions.html
-    supportLibraryVersion = "25.2.0"
+    supportLibraryVersion = "25.3.1"
 }
 
 dependencies {
