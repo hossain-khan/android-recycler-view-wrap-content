@@ -11,8 +11,9 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 6: Updated **Support Library** version from `25.0.0` to `25.1.0`, but the issue still exists.
  * UPDATE # 7: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
  * UPDATE # 8: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
+ * UPDATE # 9: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
 
-> `android.support.v7.widget.RecyclerView` version used **[25.3.1](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(March 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[25.4.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(June 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
@@ -23,9 +24,13 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 | Galaxy S4 (SGH-i337M) | 5.0.1 | ✔ | |
 | Galaxy S6 (SM-G920F) | 6.0.1 | ✘ | Works on `LANDSCAPE` orientation.  |
 | Nexus 6P | 7.0 (NPD90G), 7.1.1 (NPF10C) | ✘ | |
+| OnePlus 5 | 7.1.1 | ✘ | |
 | Galaxy Note 3 | 4.2.2 | ✔ | |
 | Emulator | 4.3.1 | ✔ | |
 | LG G4  | 6.0 | ✘ | Works on `LANDSCAPE` orientation. |
+
+
+> DISCLAIMER: Most recent updates did not execute test on all devices mentioned above.
 
 ### Stack Overflow References
  * http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working
