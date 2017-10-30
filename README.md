@@ -12,8 +12,9 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 7: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
  * UPDATE # 8: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
  * UPDATE # 9: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
+ * UPDATE # 10: Updated **Support Library** version from `25.4.0` to `26.1.0`, but the issue still exists.
 
-> `android.support.v7.widget.RecyclerView` version used **[25.4.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(June 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[26.1.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(June 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
@@ -27,6 +28,7 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 | OnePlus 5 | 7.1.1 | ✘ | |
 | Galaxy Note 3 | 4.2.2 | ✔ | |
 | Emulator | 4.3.1 | ✔ | |
+| Emulator | 8.0.0 | ✘ | |
 | LG G4  | 6.0 | ✘ | Works on `LANDSCAPE` orientation. |
 
 
