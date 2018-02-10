@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 // https://developer.android.com/topic/libraries/support-library/revisions.html
-def SUPPORT_LIB_VERSION = "26.1.0"
+def SUPPORT_LIB_VERSION = "27.0.2"
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "info.hossainkhan.recyclerviewdemo"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 3
         versionName "3.0_support-lib-v" + SUPPORT_LIB_VERSION
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
