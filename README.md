@@ -35,6 +35,15 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 
 > DISCLAIMER: Most recent updates did not execute test on all devices mentioned above.
 
+## Why use `wrap_content`?
+There may be different use case where may need to use `wrap_content`, 
+one example is there may be fixed number of similar menu items that needs to be rendered.
+
+![Fixed Menu Items](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/wrap_content-use-case.jpg)
+ 
+But, it doesnt't make sense to copy & paste code for same view multiple times.
+Creating views dynamically is also not that nice. So, using `RecyclerView` and `wrap_content` gives full control of creating this view.
+
 ### Stack Overflow References
  * http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working
  * http://stackoverflow.com/questions/34314719/how-to-use-recyclerview-inside-scrollview
@@ -65,7 +74,7 @@ Here is basic skeleton of layout I have used
 ## Screencast
 A picture is worth a thousand words, and a video is probably worth even more `^_^`
 
-![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cash.gif)
+![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cast-update.gif)
 
 ## Screenshot
 
