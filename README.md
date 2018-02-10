@@ -74,7 +74,7 @@ Here is basic skeleton of layout I have used
 ## Screencast
 A picture is worth a thousand words, and a video is probably worth even more `^_^`
 
-![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cast-update.gif)
+![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cast-update-small.gif)
 
 ## Screenshot
 
