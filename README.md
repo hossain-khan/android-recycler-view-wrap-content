@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/amardeshbd/android-recycler-view-wrap-content.svg)](https://travis-ci.org/amardeshbd/android-recycler-view-wrap-content)  [![AOSP issue link](https://img.shields.io/badge/AOSP%20issue-%23220204-orange.svg)](https://code.google.com/p/android/issues/detail?id=220204)
 
 # android-recycler-view-wrap-content
-This is a sample android app which demonstrates `RecyclerView` with **layout_height=wrap_content** not taking height of all the items issue inside `ScrollView` that happens on Marshmallow, Nougat (+MR1) (API 23, 24 &amp; 25) and how to work around it.
+This is a sample android app which demonstrates `RecyclerView` with **layout_height=wrap_content** not taking height of all the items issue inside `ScrollView` that happens on Marshmallow, Nougat (+MR1), Orio (API 23, 24, 25, 26 &amp; 27) and how to work around it.
 
  * UPDATE # 1: On Marshmallow (API 23) devices, the issue seems to happen **only on** `PORTRAIT` orientation, `LANDSCAPE` works fine. On Nougat _(Build # `NPD90G`)_ the issue still exist on both orientation.
  * UPDATE # 2: Based on solution found on [stackoverflow](http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working), replacing root `ScrollView` with `android.support.v4.widget.NestedScrollView` also avoids this issue on Marshmallow+ devices. A new demo section has been added to showcase this.
@@ -13,8 +13,9 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 8: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
  * UPDATE # 9: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
  * UPDATE # 10: Updated **Support Library** version from `25.4.0` to `26.1.0`, but the issue still exists.
+ * UPDATE # 11: Updated **Support Library** version from `26.1.0` to `27.0.2`, but the issue still exists.
 
-> `android.support.v7.widget.RecyclerView` version used **[26.1.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(June 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[27.0.2](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(November 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
@@ -33,6 +34,15 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 
 
 > DISCLAIMER: Most recent updates did not execute test on all devices mentioned above.
+
+## Why use `wrap_content`?
+There may be different use case where may need to use `wrap_content`, 
+one example is there may be fixed number of similar menu items that needs to be rendered.
+
+![Fixed Menu Items](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/wrap_content-use-case.jpg)
+ 
+But, it doesnt't make sense to copy & paste code for same view multiple times.
+Creating views dynamically is also not that nice. So, using `RecyclerView` and `wrap_content` gives full control of creating this view.
 
 ### Stack Overflow References
  * http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working
@@ -64,7 +74,7 @@ Here is basic skeleton of layout I have used
 ## Screencast
 A picture is worth a thousand words, and a video is probably worth even more `^_^`
 
-![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cash.gif)
+![Screencast](https://github.com/amardeshbd/android-recycler-view-wrap-content/raw/master/web-resources/RecyclerView-wrap_content-demo-screen-cast-update.gif)
 
 ## Screenshot
 
