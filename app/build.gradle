@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 // https://developer.android.com/topic/libraries/support-library/revisions.html
-def SUPPORT_LIB_VERSION = "27.0.2"
+def SUPPORT_LIB_VERSION = "27.1.1"
 
 android {
     compileSdkVersion 27
@@ -30,16 +30,16 @@ ext {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support:support-compat:$supportLibraryVersion"
-    compile "com.android.support:support-core-utils:$supportLibraryVersion"
-    compile "com.android.support:support-core-ui:$supportLibraryVersion"
-    compile "com.android.support:support-media-compat:$supportLibraryVersion"
-    compile "com.android.support:support-fragment:$supportLibraryVersion"
-    compile "com.android.support:design:$supportLibraryVersion"
-    testCompile 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:support-compat:$supportLibraryVersion"
+    implementation "com.android.support:support-core-utils:$supportLibraryVersion"
+    implementation "com.android.support:support-core-ui:$supportLibraryVersion"
+    implementation "com.android.support:support-media-compat:$supportLibraryVersion"
+    implementation "com.android.support:support-fragment:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
+    testImplementation 'junit:junit:4.12'
 }
