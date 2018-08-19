@@ -6,16 +6,17 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 1: On Marshmallow (API 23) devices, the issue seems to happen **only on** `PORTRAIT` orientation, `LANDSCAPE` works fine. On Nougat _(Build # `NPD90G`)_ the issue still exist on both orientation.
  * UPDATE # 2: Based on solution found on [stackoverflow](http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working), replacing root `ScrollView` with `android.support.v4.widget.NestedScrollView` also avoids this issue on Marshmallow+ devices. A new demo section has been added to showcase this.
  * UPDATE # 3: Updated **Support Library** version from `24.1.1` to `24.2.0`, but the issue still exists.
- * UPDATE # 4: Updated **Support Library** version from `24.2.0` to `24.2.1`, but the issue still exists.
- * UPDATE # 5: Updated **Support Library** version from `24.2.0` to `25.0.0`, but the issue still exists.
- * UPDATE # 6: Updated **Support Library** version from `25.0.0` to `25.1.0`, but the issue still exists.
- * UPDATE # 7: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
- * UPDATE # 8: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
- * UPDATE # 9: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
- * UPDATE # 10: Updated **Support Library** version from `25.4.0` to `26.1.0`, but the issue still exists.
- * UPDATE # 11: Updated **Support Library** version from `26.1.0` to `27.0.2`, but the issue still exists.
+ * UPDATE # 4 _(Sep 24, 2016)_: Updated **Support Library** version from `24.2.0` to `24.2.1`, but the issue still exists.
+ * UPDATE # 5 _(Oct 30, 2016)_: Updated **Support Library** version from `24.2.0` to `25.0.0`, but the issue still exists.
+ * UPDATE # 6 _(Dec 14, 2016)_: Updated **Support Library** version from `25.0.0` to `25.1.0`, but the issue still exists.
+ * UPDATE # 7 _(Feb 24, 2017)_: Updated **Support Library** version from `25.1.0` to `25.2.0`, but the issue still exists.
+ * UPDATE # 8 _(Apr 24, 2017)_: Updated **Support Library** version from `25.2.0` to `25.3.1`, but the issue still exists.
+ * UPDATE # 9 _(Jul 14, 2017)_: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
+ * UPDATE # 10 _(Oct 29, 2017)_: Updated **Support Library** version from `25.4.0` to `26.1.0`, but the issue still exists.
+ * UPDATE # 11 _(Feb 10, 2018)_: Updated **Support Library** version from `26.1.0` to `27.0.2`, but the issue still exists.
+ * UPDATE # 12 _(Aug 19, 2018)_: Updated **Support Library** version from `27.0.2` to `27.1.1`, but the issue still exists. Tested on Nexus 5 (v6.0.1), Nexus 7 (v6.0.1), Pixel 2 XL (v9), OnePlus 5 (v8.1).
 
-> `android.support.v7.widget.RecyclerView` version used **[27.0.2](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(November 2017)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[27.1.1](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(April 2018)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
@@ -26,14 +27,15 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 | Galaxy S4 (SGH-i337M) | 5.0.1 | ✔ | |
 | Galaxy S6 (SM-G920F) | 6.0.1 | ✘ | Works on `LANDSCAPE` orientation.  |
 | Nexus 6P | 7.0 (NPD90G), 7.1.1 (NPF10C) | ✘ | |
-| OnePlus 5 | 7.1.1 | ✘ | |
+| OnePlus 5 | 7.1.1, 8.1 | ✘ | |
 | Galaxy Note 3 | 4.2.2 | ✔ | |
 | Emulator | 4.3.1 | ✔ | |
 | Emulator | 8.0.0 | ✘ | |
 | LG G4  | 6.0 | ✘ | Works on `LANDSCAPE` orientation. |
+| Pixel 2 XL | 8.1, 9.0 | ✘ | |
 
 
-> DISCLAIMER: Most recent updates did not execute test on all devices mentioned above.
+> DISCLAIMER: Most recent updates mentioned above did not execute test on all devices listed here.
 
 ## Why use `wrap_content`?
 There may be different use case where may need to use `wrap_content`, 
