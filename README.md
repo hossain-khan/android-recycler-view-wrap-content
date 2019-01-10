@@ -37,7 +37,7 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
 
 > DISCLAIMER: Most recent updates mentioned above did not execute test on all devices listed here.
 
-## Why use `wrap_content`?
+## ℹ️ Why use `wrap_content`?
 There may be different use case where may need to use `wrap_content`, 
 one example is there may be fixed number of similar menu items that needs to be rendered.
 
@@ -45,6 +45,9 @@ one example is there may be fixed number of similar menu items that needs to be 
  
 But, it doesnt't make sense to copy & paste code for same view multiple times.
 Creating views dynamically is also not that nice. So, using `RecyclerView` and `wrap_content` gives full control of creating this view.
+
+## 🛑 When **NOT** to use `wrap_content`?
+If you have a relatively medium size content with images, then you **should not** use this method to force every item to render at once. Since there is no recycling happining, you may get `OutOfMemoryError`.
 
 ### Stack Overflow References
  * http://stackoverflow.com/questions/27083091/recyclerview-inside-scrollview-is-not-working
