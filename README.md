@@ -14,9 +14,10 @@ This is a sample android app which demonstrates `RecyclerView` with **layout_hei
  * UPDATE # 9 _(Jul 14, 2017)_: Updated **Support Library** version from `25.3.1` to `25.4.0`, but the issue still exists.
  * UPDATE # 10 _(Oct 29, 2017)_: Updated **Support Library** version from `25.4.0` to `26.1.0`, but the issue still exists.
  * UPDATE # 11 _(Feb 10, 2018)_: Updated **Support Library** version from `26.1.0` to `27.0.2`, but the issue still exists.
- * UPDATE # 12 _(Aug 19, 2018)_: Updated **Support Library** version from `27.0.2` to `27.1.1`, but the issue still exists. Tested on Nexus 5 (v6.0.1), Nexus 7 (v6.0.1), Pixel 2 XL (v9), OnePlus 5 (v8.1).
+ * UPDATE # 12 _(Aug 19, 2018)_: Updated **Support Library** version from `27.0.2` to `27.1.1`, but the issue still exists. Tested only on Nexus 5 (v6.0.1), Nexus 7 (v6.0.1), Pixel 2 XL (v9), OnePlus 5 (v8.1).
+ * UPDATE # 13 _(Mar 28, 2019)_: Updated **Support Library** version from `27.1.1` to `28.0.0`, but the issue still exists. Tested only on Pixel 2 XL (v9.0).
 
-> `android.support.v7.widget.RecyclerView` version used **[27.1.1](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(April 2018)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
+> `android.support.v7.widget.RecyclerView` version used **[28.0.0](https://github.com/amardeshbd/android-recycler-view-wrap-content/blob/master/app/build.gradle#L4)** _(September 21, 2018)_  - [Release Notes](https://developer.android.com/topic/libraries/support-library/revisions.html)
 
 # Devices Tested On
 
